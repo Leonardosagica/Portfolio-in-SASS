@@ -1,0 +1,96 @@
+/************* About Section *************/
+
+.s2 {
+	background-color: var(--secondaryColor);
+	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+}
+.about-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+	gap: 120px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.about-me,
+p,
+h4,
+h3,
+img {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#skills {
+	display: flex;
+	height: 180px;
+	padding: 15px;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: var(--previewShadow);
+}
+
+@media (max-width: 1210px) {
+	#skills ul {
+		margin: 5px;
+	}
+}
+
+@media (max-width: 600px) {
+	.about-me {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#skills {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		align-items: space-evenly;
+	}
+	ul:nth-child(2) {
+		width: 270px;
+	}
+}
+
+.skills__item1 {
+	display: flex;
+}
+
+.social-links {
+	display: grid;
+	align-content: center;
+	text-align: center;
+}
+
+#social_img {
+	width: 100%;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fa:hover {
+	opacity: 0.4;
+}
+
+.fa-linkedin {
+	background: #3b5998;
+	color: white;
+}
+
+.fa-github {
+	background: #000000;
+	color: white;
+}
